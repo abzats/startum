@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.bottom {
+  margin: auto auto 0 0;
+}
+
+.school-img {
+  background-position: center left;
+}
+
+.sub-header,
+.address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.address {
+  font-size: var(--16);
+  font-weight: 500;
+  margin-bottom: var(--20);
+}
+
+.pin {
+  width: var(--32);
+  height: var(--32);
+}
+
+.rocket {
+  width: var(--48);
+  height: var(--48);
+}
+
+p {
+  font-size: var(--20);
+}

@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="card no-gap card-60">
+    <h1>Клуб-школа, <br />Обучение русскому языку</h1>
+    <h3 class="sub-header">
+      <span>Запишитесь на первое занятие бесплатно<br />Все на START ум!</span>
+      <img class="rocket" src="assets/rocket.svg" />
+    </h3>
+    <div class="address">
+      <img class="pin" src="assets/pin.svg" alt="map" />
+      <a class="ml-sm" href="https://maps.app.goo.gl/RuZ55cU2jsaLPMSAA">Stengårds Alle 122-128, <br />2800 Kongens Lyngby</a>
+    </div>
+    <a class="btn btn-lg btn-red mr-auto" href="#signup">Записаться</a>
+  </div>
+
+  <div class="card">
+    <div class="full school-img" style="background-image: url('assets/school.png')"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card bg-yellow">
+    <a (click)="showSchedule = true" class="btn btn-black mx-auto mb-md">Расписание <span class="pl-xs">→</span> </a>
+    <img class="mt-auto mb-0" src="assets/pencils.jpg" />
+  </div>
+
+  <div class="card bg-blue">
+    <h3 class="cursive white big mb-0 pb-0">10+</h3>
+    <h3>Лет опыта</h3>
+    <p>Мы учим детей билингвов русскому языку в Дании уже более 10 лет и накопили солидный опыт</p>
+
+    <a href="#team" class="btn btn-white bottom">Узнать больше <span class="pl-xs">↓</span></a>
+  </div>
+
+  <div class="card bg-green">
+    <h3>Тематические вечеринки и праздники</h3>
+    <p>Празднование важных событий, тематические вечеринки и пикники 🎉🎄</p>
+
+    <a href="#events" class="btn btn-white bottom">Узнать больше <span class="pl-xs">↓</span></a>
+  </div>
+</div>
+
+<ng-container *ngIf="showSchedule">
+  <div class="overlay">
+    <div class="container">
+      <div class="overlay-close-container">
+        <button type="button" title="close" class="overlay-close-container-btn" (click)="showSchedule = false">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+        </button>
+      </div>
+      <app-schedule></app-schedule>
+    </div>
+  </div>
+</ng-container>

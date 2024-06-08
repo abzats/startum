@@ -1,0 +1,133 @@
+$container-spacer: 4rem;
+$triangle-spacer: 60px;
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto $container-spacer;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: calc(var(--20) * .6);
+
+  &.row-col {
+    flex-direction: column;
+  }
+
+  &>* {
+    flex: 1;
+  }
+
+  &+& {
+    margin-top: calc(var(--20) * .6);
+  }
+}
+
+.block-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  &+& {
+    margin-top: calc(var(--20) * 2);
+  }
+
+  .net {
+    width: 100%;
+    height: calc(100% + 1px);
+    max-height: 800px;
+    position: absolute;
+    top: -1px;
+    right: calc(-50% + 41px);
+    opacity: 0.5;
+    z-index: 0;
+    background: repeating-linear-gradient(to right, transparent, white 1px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(to bottom, transparent, white 1px, transparent 1px, transparent 40px);
+
+    &.left {
+      left: calc(-50% + 41px);
+      background: repeating-linear-gradient(to left, transparent, white 1px, transparent 1px, transparent 40px),
+        repeating-linear-gradient(to bottom, transparent, white 1px, transparent 1px, transparent 40px);
+    }
+
+  }
+
+  .triangle {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    height: $triangle-spacer;
+    margin-top: calc(var(--20) * -2);
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+    }
+
+    &:not(.left) {
+      border-bottom: $triangle-spacer solid white;
+      border-left: 100vw solid transparent;
+    }
+
+    &.left {
+      border-bottom: $triangle-spacer solid white;
+      border-right: 100vw solid transparent;
+    }
+  }
+
+  .container {
+    z-index: 1;
+    margin: $container-spacer auto;
+  }
+}
+
+
+.bg-yellow {
+  background-color: var(--clr-yellow) !important;
+}
+
+.bg-blue {
+  background-color: var(--clr-blue) !important;
+}
+
+.bg-dark-blue {
+  background-color: var(--clr-dark-blue) !important;
+}
+
+.bg-green {
+  background-color: var(--clr-green) !important;
+}
+
+.bg-dark-green {
+  background-color: var(--clr-dark-green) !important;
+}
+
+.bg-citron {
+  background-color: var(--clr-citron) !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .row {
+    flex-direction: column;
+
+    &.card-60 {
+      flex: 1;
+    }
+
+    .full {
+      min-height: 45vw !important;
+    }
+  }
+
+  .triangle {
+    display: none;
+  }
+}

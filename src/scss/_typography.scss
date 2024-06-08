@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'UnlimitedPie';
+  src: url('../assets/UnlimitedPie.ttf');
+}
+
+.cursive {
+  font-family: 'UnlimitedPie', 'Brush Script MT', cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.big {
+  font-size: var(--48);
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--clr-black);
+  font-stretch: 100%;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--48);
+}
+
+h2 {
+  font-size: var(--36);
+}
+
+h3 {
+  font-size: var(--24);
+}
+
+a {
+  color: var(--clr, var(--clr-primary-400));
+
+  &:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--clr-primary-400);
+    text-decoration: none
+  }
+}
+
+.text-20 {
+  font-size: var(--20);
+}
+
+.text-w-50 {
+  max-width: 36rem;
+}
+
+.text-w-25 {
+  max-width: 20rem;
+}
+
+h4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .name {
+    box-sizing: border-box;
+    width: var(--40);
+    height: var(--40);
+    border-radius: 100%;
+    background: white;
+    color: var(--clr-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+}

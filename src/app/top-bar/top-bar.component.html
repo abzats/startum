@@ -1,0 +1,17 @@
+<ul [class.change]="!showMenu">
+  <li>
+    <a href="#start" class="logo cursive">startum.dk</a>
+    <button type="button" class="menu-icon" title="menu" (click)="showMenu = !showMenu" [class.change]="showMenu">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </button>
+  </li>
+  <li class="br-hide"><a [routerLink]="['/home/schedule']">Расписание</a></li>
+  <li class="br-hide"><a href="#process">Process</a></li>
+  <li class="br-hide"><a href="#events">Events</a></li>
+  <li class="br-hide"><a href="#gallery">Gallery</a></li>
+  <li class="br-hide"><a href="#team">Our team</a></li>
+  <li class="br-hide">RUS</li>
+  <li class="br-hide"><a href="#signup" class="btn btn-black">Contact us</a></li>
+</ul>

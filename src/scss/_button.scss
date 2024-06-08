@@ -1,0 +1,36 @@
+.btn {
+  padding: 0.5rem 1.2rem;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  white-space: nowrap;
+  text-decoration: none;
+
+  font-size: var(--20);
+  font-weight: 500;
+
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.btn-lg {
+    padding: var(--12) var(--36);
+    font-size: var(--20);
+  }
+
+  &.btn-red {
+    background-color: var(--clr-red);
+    color: white;
+  }
+
+  &.btn-black {
+    background-color: var(--clr-main);
+    color: white;
+  }
+
+  &.btn-white {
+    background-color: white;
+    color: var(--clr-main);
+  }
+}

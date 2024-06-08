@@ -1,0 +1,19 @@
+:host {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  display: inline-block;
+  border: 1px solid rgb(165, 165, 165);
+  line-height: initial;
+  min-height: 2rem;
+  padding: .8rem;
+  border-radius: .5rem;
+  margin-bottom: var(--16);
+}

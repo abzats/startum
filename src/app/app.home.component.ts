@@ -21,9 +21,9 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     SignUpComponent,
     FooterComponent,
   ],
-  template: `<router-outlet></router-outlet>`,
+  templateUrl: './app.home.component.html',
   styles: `:host {
     display: block;
   }`,
 })
-export class AppComponent {}
+export class HomeComponent {}

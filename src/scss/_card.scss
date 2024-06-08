@@ -1,0 +1,35 @@
+.card {
+  box-sizing: border-box;
+  border-radius: 2.5rem;
+  padding: var(--40);
+  overflow: hidden;
+  background-color: white;
+
+  &.card-60 {
+    flex-basis: 60%;
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+
+  &.card-70 {
+    flex-basis: 70%;
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+
+  &.no-gap {
+    padding: 0 0 var(--40);
+    border-radius: 0;
+  }
+
+  .full {
+    height: calc(100% + (2 * var(--40)));
+    min-height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: calc(100% + (2 * var(--40)));
+    max-width: calc(100% + (2 * var(--40)));
+    margin: calc(var(--40) * -1);
+  }
+}

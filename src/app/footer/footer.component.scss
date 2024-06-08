@@ -1,0 +1,74 @@
+:host {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  padding-top: var(--48);
+}
+
+::ng-deep {
+
+  .footer-spacer {
+    flex: 0 0 4rem;
+  }
+
+}
+
+h4 {
+  font-weight: normal;
+}
+
+.outer-bg,
+.inner-bg {
+  position: absolute;
+}
+
+.outer-bg {
+  z-index: -2;
+  height: 180%;
+  width: 130%;
+  border-radius: 80%;
+  top: 0;
+  left: -20vw;
+}
+
+
+.inner-bg {
+  z-index: -1;
+  height: calc(140% - 3rem);
+  width: 100%;
+  border-radius: 80%;
+  top: 3rem;
+  left: -4rem;
+}
+
+.col {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 960px) {
+
+  ::ng-deep {
+    .footer-spacer {
+      display: none;
+    }
+  }
+
+  .outer-bg {
+    display: none;
+  }
+
+  .inner-bg {
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+  }
+
+  :host {
+    padding-top: 0;
+  }
+}

@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --breakpoint: 800px;
+  --clr-main: #202020;
+  --clr-black: #000000;
+  --clr-green: #a7cd80;
+  --clr-dark-green: #3c9e36;
+  --clr-blue: #96d4e3;
+  --clr-dark-blue: #3165ae;
+  --clr-red: #ef3d39;
+  --clr-yellow: #fff3C6;
+  --clr-citron: #ffe317;
+  --12: 0.75rem;
+  --14: 0.875rem;
+  --16: 1rem;
+  --20: 1.25rem;
+  --24: 1.5rem;
+  --36: 2rem;
+  --48: 3rem;
+  --64: 4rem;
+  --40: 2.5rem;
+}
+
+
+@media only screen and (min-width: 65em) {
+  // :root {
+  //   --section-spacing: 7rem
+  // }
+}
+
+@media only screen and (min-width: 40em) {
+  // :root {
+  //   //
+  // }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
+}
+
+
+body {
+  text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  color: var(--clr-main);
+  letter-spacing: .3px;
+}
+
+@import "./scss/general";
+@import "./scss/layout";
+@import "./scss/typography";
+@import "./scss/button";
+@import "./scss/card";
+@import "./scss/spacing";
+@import "./scss/overlay";

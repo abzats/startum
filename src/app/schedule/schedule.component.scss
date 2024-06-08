@@ -1,0 +1,22 @@
+:host {
+  display: block;
+}
+
+.classes {
+  line-height: 2;
+  font-weight: 500;
+}
+
+.class-label {
+  border-radius: 1.5rem;
+  background-color: white;
+  padding: var(--20);
+  display: inline-block;
+
+  span {
+    display: block;
+    color: var(--clr-dark-blue);
+    font-size: var(--16);
+    margin-top: .5em;
+  }
+}
