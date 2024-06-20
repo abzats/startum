@@ -1,11 +1,16 @@
 :host {
   display: block;
+  isolation: isolate;
 }
 
 .card {
   display: flex;
   flex-direction: row;
   gap: var(--36);
+
+  img {
+    border-radius: 1.5rem;
+  }
 }
 
 .col2 {
@@ -51,6 +56,11 @@
 }
 
 @media only screen and (max-width: 960px) {
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .card {
     flex-direction: column;
   }
@@ -73,10 +83,10 @@
       &::before {
         display: block;
         border-radius: 17px;
-        left: -20px;
-        top: -20px;
-        width: calc(100% + 40px);
-        height: calc(100% + 40px);
+        left: -14px;
+        top: -14px;
+        width: calc(100% + 28px);
+        height: calc(100% + 28px);
         margin: 0;
       }
 
@@ -92,6 +102,30 @@
           background-color: var(--clr-dark-blue);
         }
       }
+
+      p {
+        font-style: italic;
+
+        &::before {
+          content: open-quote;
+        }
+
+        &::after {
+          content: close-quote;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .col3 {
+
+    &,
+    &.bg-img,
+    &.yellow {
+      margin: 0 20px !important;
     }
   }
 }

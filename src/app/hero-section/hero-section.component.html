@@ -19,7 +19,7 @@
 
 <div class="row">
   <div class="card bg-yellow">
-    <a (click)="showSchedule = true" class="btn btn-black mx-auto mb-md">Расписание <span class="pl-xs">→</span> </a>
+    <a (click)="showSchedule = true" class="btn btn-black ml-0 mr-auto mb-md">Расписание <span class="pl-xs">→</span> </a>
     <img class="mt-auto mb-0" src="assets/pencils.jpg" />
   </div>
 
@@ -28,7 +28,7 @@
     <h3>Лет опыта</h3>
     <p>Мы учим детей билингвов русскому языку в Дании уже более 10 лет и накопили солидный опыт</p>
 
-    <a href="#team" class="btn btn-white bottom">Узнать больше <span class="pl-xs">↓</span></a>
+    <a href="#process" class="btn btn-white bottom">Узнать больше <span class="pl-xs">↓</span></a>
   </div>
 
   <div class="card bg-green">
@@ -44,8 +44,7 @@
     <div class="container">
       <div class="overlay-close-container">
         <button type="button" title="close" class="overlay-close-container-btn" (click)="showSchedule = false">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
+          <img class="icon-img" src="assets/close.svg" alt="menu" />
         </button>
       </div>
       <app-schedule></app-schedule>

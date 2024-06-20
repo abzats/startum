@@ -1,45 +1,17 @@
 <h2>Расписание STARTUM ’24-’25</h2>
 
-<div class="row">
-  <div class="card bg-dark-blue">
-    <div class="class-label mb-md">
-      <h3 class="p-0 cursive">
-        1 Урок
-        <span>9:30-10:15</span>
-      </h3>
+<ng-container *ngIf="schedule$ | async as schedule">
+  <div class="row pb-l">
+    @for (item of schedule; track $index;) {
+    <div class="card" [ngClass]="styles[$index].bg">
+      <div class="class-label mb-md">
+        <h3 class="p-0 cursive">
+          {{ $index + 1 }} Урок
+          <span>{{ item.time }}</span>
+        </h3>
+      </div>
+      <p class="classes" [ngClass]="styles[$index].p" [innerText]="replaceDoubleCharacters(item.ru)"></p>
     </div>
-    <p class="classes white">
-      Подготовка к школе <br />
-      Русский язык 2 класс <br />
-      Рисование
-    </p>
+    }
   </div>
-
-  <div class="card bg-green">
-    <div class="class-label mb-md">
-      <h3 class="p-0 cursive">
-        2 Урок
-        <span>9:30-10:15</span>
-      </h3>
-    </div>
-    <p class="classes">
-      Подготовка к школе <br />
-      Русский язык 2 класс <br />
-      Рисование
-    </p>
-  </div>
-
-  <div class="card bg-blue">
-    <div class="class-label mb-md">
-      <h3 class="p-0 cursive">
-        1 Урок
-        <span>9:30-10:15</span>
-      </h3>
-    </div>
-    <p class="classes">
-      Подготовка к школе <br />
-      Русский язык 2 класс <br />
-      Рисование
-    </p>
-  </div>
-</div>
+</ng-container>

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ScheduleComponent } from '../schedule/schedule.component';
 
 @Component({
@@ -11,4 +11,12 @@ import { ScheduleComponent } from '../schedule/schedule.component';
 })
 export class HeroSectionComponent {
   showSchedule = false;
+
+  @HostListener('document:keydown', ['$event'])
+  onKeydownHandler(event: KeyboardEvent) {
+    if (event.code === 'Escape' && this.showSchedule) {
+      event.preventDefault();
+      this.showSchedule = false;
+    }
+  }
 }

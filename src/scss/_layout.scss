@@ -5,7 +5,7 @@ $triangle-spacer: 60px;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto $container-spacer;
-  max-width: 75rem;
+  max-width: 77rem;
   padding: 0 1.5rem;
 }
 
@@ -115,15 +115,22 @@ $triangle-spacer: 60px;
 }
 
 @media only screen and (max-width: 960px) {
+  .container {
+    padding: 0 .5rem;
+  }
+
   .row {
     flex-direction: column;
 
-    &.card-60 {
+    &.card-60,
+    &.card-55,
+    &.card-70 {
       flex: 1;
     }
 
     .full {
-      min-height: 45vw !important;
+      min-height: 32vw !important;
+      background-position: top left !important;
     }
   }
 

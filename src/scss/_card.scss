@@ -5,6 +5,12 @@
   overflow: hidden;
   background-color: white;
 
+  &.card-55 {
+    flex-basis: 55%;
+    flex-shrink: 1;
+    flex-grow: 0;
+  }
+
   &.card-60 {
     flex-basis: 60%;
     flex-shrink: 1;

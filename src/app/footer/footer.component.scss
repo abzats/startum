@@ -3,7 +3,7 @@
   position: relative;
   isolation: isolate;
   z-index: 1;
-  padding-top: var(--48);
+  padding-top: var(--40);
 }
 
 ::ng-deep {
@@ -47,6 +47,19 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+}
+
+.sm {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sm-link {
+  flex: 0 0 var(--36);
+}
+
+.sm-icon {
+  max-width: var(--36);
 }
 
 @media only screen and (max-width: 960px) {

@@ -1,5 +1,6 @@
 :host {
   display: block;
+  isolation: isolate;
   margin-top: calc(var(--20)* 2);
 }
 
@@ -8,7 +9,7 @@
 }
 
 .card3 {
-  min-height: 27rem;
+  min-height: 25rem;
 }
 
 .card4 {
@@ -65,5 +66,12 @@
 
   .float {
     margin-top: 0;
+  }
+
+  .card4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

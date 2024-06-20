@@ -2,16 +2,13 @@
   <li>
     <a href="#start" class="logo cursive">startum.dk</a>
     <button type="button" class="menu-icon" title="menu" (click)="showMenu = !showMenu" [class.change]="showMenu">
-      <span class="bar1"></span>
-      <span class="bar2"></span>
-      <span class="bar3"></span>
+      <img class="icon-img" src="assets/menu.svg" alt="menu" *ngIf="!showMenu" />
+      <img class="icon-img" src="assets/close.svg" alt="menu" *ngIf="showMenu" />
     </button>
   </li>
-  <li class="br-hide"><a [routerLink]="['/home/schedule']">Расписание</a></li>
-  <li class="br-hide"><a href="#process">Process</a></li>
-  <li class="br-hide"><a href="#events">Events</a></li>
-  <li class="br-hide"><a href="#gallery">Gallery</a></li>
-  <li class="br-hide"><a href="#team">Our team</a></li>
-  <li class="br-hide">RUS</li>
-  <li class="br-hide"><a href="#signup" class="btn btn-black">Contact us</a></li>
+  <li class="br-hide"><a href="#process">Занятия</a></li>
+  <li class="br-hide"><a href="#events">События</a></li>
+  <li class="br-hide"><a href="#price">Цены</a></li>
+  <li class="br-hide"><a href="#team">Наша команда</a></li>
+  <li class="br-hide"><a href="#signup" class="btn btn-black">Связаться с нами</a></li>
 </ul>

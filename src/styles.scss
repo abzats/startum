@@ -15,9 +15,9 @@
   --20: 1.25rem;
   --24: 1.5rem;
   --36: 2rem;
+  --40: 2.5rem;
   --48: 3rem;
   --64: 4rem;
-  --40: 2.5rem;
 }
 
 
@@ -49,6 +49,14 @@ body {
   min-height: 100vh;
   color: var(--clr-main);
   letter-spacing: .3px;
+
+  &.show-overlay {
+    overflow: hidden;
+
+    .triangle {
+      display: none;
+    }
+  }
 }
 
 @import "./scss/general";

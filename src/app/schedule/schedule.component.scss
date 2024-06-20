@@ -1,5 +1,6 @@
 :host {
   display: block;
+  isolation: isolate;
 }
 
 .classes {
@@ -18,5 +19,13 @@
     color: var(--clr-dark-blue);
     font-size: var(--16);
     margin-top: .5em;
+  }
+}
+
+.row {
+  flex-wrap: wrap;
+
+  .card {
+    flex: 0 0 calc(33% - var(--20) * 0.6);
   }
 }
