@@ -1,3 +1,124 @@
 {
-  "message": "Translated EN"
+  "TOP_BAR": {
+    "PROCESS": "Lessons",
+    "EVENTS": "Events",
+    "PRICE": "Prices",
+    "TEAM": "Our team",
+    "CONTACT_US": "Contact us"
+  },
+  "TEAM": {
+    "HEADER": "Our professional team",
+    "ONE": {
+      "NAME": "Victoria Bech",
+      "TEXT": "I am a certified elementary school, crafts, and home economics teacher, philologist, and a teacher of Russian language and literature. <br />My teaching experience began in a Russian school, where I worked for 16 years. In Denmark, I have been teaching for 13 years at a Saturday school for Russian-speaking bilingual children. I worked for 12 years at a school affiliated with the Russian Center for Science and Culture in Copenhagen, and since 2023, I have opened the STARTUM club-school with a group of like-minded individuals, where I work as an administrator. <br />We educate children on language and culture, creating a language environment for communication and organizing social events. <br />For the past 3 years, I have been preparing students from Birkerød Gymnasie for Russian literature exams at IB1 and IB2 levels with excellent results",
+      "CITE": "Mastery of the language at the native level is possible, which I can confirm as both a teacher and a mother of two children  👩‍👧‍👦"
+    },
+    "TWO": {
+      "NAME": "Victoria Burtseva",
+      "TEXT": "Hello! I'm an artist, illustrator, and graphic designer. <br />I graduated from the Moscow Stroganov State University of Arts and Industry with additional education in illustration and graphic design. I have been working as a graphic designer for over 5 years, and I also teach workshops on drawing and painting. Since 2024, I have been working at the Startum school. <br />In my classes, children learn to draw, get acquainted with artists, and study various techniques. Drawing develops fine motor skills, attention, creativity, and helps to manage emotions.",
+      "CITE": "I'm looking forward to seeing everyone at the courses \"Graphic Design for Kids\" and \"Drawing\", where we will be learning about creating logos and branding! ❤️"
+    },
+    "THREE": {
+      "NAME": "Iuliia Andrushko",
+      "TEXT": "Hello everyone! I am a teacher of Russian language and literature, a candidate of philological sciences, a graduate of Chelyabinsk State Pedagogical University. I worked as a Russian language teacher in a college for 12 years, being engaged in educational work  and preparing students for scientific and creative competitions. <br />In 2024, I completed the \"Playful Reading\" course and studied the peculiarities of working with young children. <br />I also completed the \"Leader of Children's Theater Group\" course and led a theater group for children aged 6 to 12 for 8 years. <br />I am passionate about dancing and drawing, and I am raising a 7-year-old son. In 2023, my family moved to Copenhagen. <br />I have been working at the \"Startum\" club since 2023.",
+      "CITE": "During my lessons, I combine traditional and playful forms to make the classes not only educational but also engaging for children 🎭"
+    }
+  },
+  "CONTACT_US": {
+    "EMAIL": "E-mail us",
+    "PHONE": "Call us",
+    "ADDRESS": "Our address",
+    "HEADER": "Contact us",
+    "HEADLINE": "Bilingualism is a gift <br />that we nurture!",
+    "TEXT": "See you in class! 📚✨"
+  },
+  "FOOTER": {
+    "TEXT": "Follow our news and events on social media:"
+  },
+  "HERO": {
+    "HEADER": "Club-School  <br />Russian language learning",
+    "TEXT": "Sign up for the first class for free <br />Everyone at STARTUM!",
+    "SIGN_UP": "Sign up",
+    "SCHEDULE": "View schedule",
+    "ONE": {
+      "HEADER": "Years of experience",
+      "TEXT": "We have been teaching bilingual children in Russian in Denmark for over 10 years and have accumulated significant experience",
+      "BUTTON": "Learn more"
+    },
+    "TWO": {
+      "HEADER": "Themed parties and celebrations",
+      "TEXT": "Celebrating important events, themed parties, and picnics 🎉🎄",
+      "BUTTON": "Learn more"
+    }
+  },
+  "PRICE": {
+    "HEADER": "Prices and discount system",
+    "TEXT_ONE": "The third child in the family",
+    "TEXT_TWO": "(the child with the fewer number of lessons) attends the school for free",
+    "BUTTON": "Contact us"
+  },
+  "SCHEDULE": {
+    "HEADER": "Schedule STARTUM",
+    "CLASS": "Class"
+  },
+  "PROCESS": {
+    "HEADER": "The learning process at our school",
+    "ONE": {
+      "HEADER": "Discover the joy of learning with us",
+      "TEXT": "At our school, we incorporate playful elements, a creative approach, and academic knowledge into learning, encouraging children to actively participate. We foster a friendly atmosphere where every child feels comfortable and confident"
+    },
+    "TWO": {
+      "HEADER": "Participation in competitions and olympiads",
+      "TEXT": "Come and join our classes. Participate in international competitions and olympiads with us",
+      "BUTTON": "Learn more"
+    }
+  },
+  "FEEDBACK": {
+    "HEADER": "Reviews",
+    "TEXT": "Come and try one or several different classes 🙂",
+    "BUTTON": "Contact us",
+    "ONE": {
+      "TEXT": "Both of my children attend this school and always come home in a good mood. I like the discount system for families, it makes education accessible for us. We are happy to have found such a wonderful school!",
+      "NAME": "Yanina, <br />mom of Isabella, 9 <br />and Erik, 6",
+      "C": "Y"
+    },
+    "TWO": {
+      "TEXT": "My husband, Mikhail, and I are very pleased that all our children attend this school. Our third child attends for free. Our Saturdays are productive, and the children really enjoy it here",
+      "NAME": "Nadezhda, <br />mom of Alisa, 5,<br /> Alena, 7, <br />and Alexey, 10",
+      "C": "N"
+    },
+    "THREE": {
+      "TEXT": "Excellent school! Alice gladly attends all the lessons. We really like that not only knowledge is given here, but also children's creative thinking is developed. Thanks to the teachers for their hard work and care!",
+      "NAME": "Natalya, <br />mom of Alisa, 6",
+      "C": "N"
+    },
+    "FOUR": {
+      "TEXT": "We are very pleased with the education in this school. We eagerly await each lesson and the beginning of the school year",
+      "NAME": "Dasha, <br />mom of Vladimir, 6",
+      "C": "D"
+    }
+  },
+  "EVENTS": {
+    "HEADER": "Our traditional events",
+    "ONE": {
+      "HEADER": "Themed days and holidays:",
+      "TEXT1": "Opening and closing of the school season",
+      "TEXT2": "New Year trees",
+      "TEXT3": "Russian carnival (Maslenitsa)",
+      "TEXT4": "Workshops for parents",
+      "TEXT5": "Joint projects"
+    },
+    "TWO": {
+      "HEADER": "Picnics",
+      "TEXT": "Our school picnics provide a wonderful opportunity for students and their families to spend time together. The program includes sports games, contests, and creative workshops, so that everyone can find an activity they enjoy"
+    },
+    "THREE": {
+      "HEADER": "Chess tournaments",
+      "TEXT": "At our school, we regularly hold chess tournaments, giving students the opportunity to demonstrate their skills and develop strategic thinking in a friendly atmosphere."
+    },
+    "FOUR": {
+      "HEADER": "Active breaks",
+      "TEXT": "At our school, we have active breaks between classes, where students can relax and recharge their energy through active games and exercises"
+    }
+  }
 }

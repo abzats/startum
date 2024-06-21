@@ -18,6 +18,34 @@
   <li class="br-hide"
     ><a href="#team">{{ 'TOP_BAR.TEAM' | translate }}</a></li
   >
+  <li class="br-hide lang-li">
+    <div class="lang">
+      <a
+        class="lang-link"
+        [routerLink]="[]"
+        [queryParams]="{ lang: null }"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActive]="'active'"
+        >Rus</a
+      >
+      <a
+        class="lang-link"
+        [routerLink]="[]"
+        [queryParams]="{ lang: 'en' }"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActive]="'active'"
+        >Eng</a
+      >
+      <!-- <a
+        class="lang-link"
+        [routerLink]="[]"
+        [queryParams]="{ lang: 'da' }"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActive]="'active'"
+        >Dan</a
+      > -->
+    </div>
+  </li>
   <li class="br-hide"
     ><a href="#signup" class="btn btn-black">{{ 'TOP_BAR.CONTACT_US' | translate }}</a></li
   >

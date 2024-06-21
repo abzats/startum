@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, DestroyRef } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { ActivatedRoute } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { EventsComponent } from './events/events.component';
@@ -35,22 +37,21 @@ import { TopBarComponent } from './top-bar/top-bar.component';
   }`,
 })
 export class AppComponent {
-  constructor(private translateService: TranslateService) {
+  constructor(private route: ActivatedRoute, private translateService: TranslateService, private destroy: DestroyRef) {
     this.wireTranslations();
   }
 
   wireTranslations() {
     const defaultLang = 'ru';
     this.translateService.setDefaultLang(defaultLang);
-    // this.route.queryParamMap
-    //   .pipe(takeUntilDestroyed(this.destroy))
-    //   .subscribe((params) => {
-    //     let lang = params.get('lang');
-    //     if (lang === null) {
-    //       this.translateService.use(defaultLang);
-    //     } else {
-    //       this.translateService.use(lang);
-    //     }
-    //   });
+    this.route.queryParamMap.pipe(takeUntilDestroyed(this.destroy)).subscribe((params: any) => {
+      let lang = params.get('lang');
+
+      if (lang === null) {
+        this.translateService.use(defaultLang);
+      } else {
+        this.translateService.use(lang);
+      }
+    });
   }
 }
