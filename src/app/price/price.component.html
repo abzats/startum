@@ -1,6 +1,6 @@
 <div class="block-section bg-citron">
   <div class="container">
-    <h2>Цены и система скидок</h2>
+    <h2>{{ 'PRICE.HEADER' | translate }}</h2>
     <div class="row">
       <div class="card bg-blue">
         <h3><span class="white cursive big">80</span> крон</h3>
@@ -24,9 +24,11 @@
       </div>
     </div>
     <div class="float">
-      <p class="pb-0"><b>Третий ребенок в семье</b></p>
-      <p>(ребенок с меньшим количеством уроков) посещает школу бесплатно Узнать подробности</p>
-      <a href="#signup" class="btn btn-red">Узнать подробности</a>
+      <p class="pb-0"
+        ><b>{{ 'PRICE.TEXT_ONE' | translate }}</b></p
+      >
+      <p>{{ 'PRICE.TEXT_TWO' | translate }}</p>
+      <a href="#signup" class="btn btn-red">{{ 'PRICE.BUTTON' | translate }}</a>
     </div>
   </div>
   <div class="triangle left"></div>

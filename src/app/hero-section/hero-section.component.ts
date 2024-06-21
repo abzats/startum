@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { ScheduleComponent } from '../schedule/schedule.component';
 
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [CommonModule, ScheduleComponent],
+  imports: [CommonModule, ScheduleComponent, TranslateModule],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss',
 })

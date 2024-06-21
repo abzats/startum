@@ -47,3 +47,9 @@ textarea {
 a {
   cursor: pointer !important;
 }
+
+@media only screen and (min-width: 660.0000000001px) and (max-width: 900px) {
+  html {
+    font-size: 1.8vw;
+  }
+}

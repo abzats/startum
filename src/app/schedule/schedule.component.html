@@ -1,4 +1,4 @@
-<h2>Расписание STARTUM ’24-’25</h2>
+<h2>{{ 'SCHEDULE.HEADER' | translate }} ’24-’25</h2>
 
 <ng-container *ngIf="schedule$ | async as schedule">
   <div class="row pb-l">
@@ -6,7 +6,7 @@
     <div class="card" [ngClass]="styles[$index].bg">
       <div class="class-label mb-md">
         <h3 class="p-0 cursive">
-          {{ $index + 1 }} Урок
+          {{ $index + 1 }} {{ 'SCHEDULE.CLASS' | translate }}
           <span>{{ item.time }}</span>
         </h3>
       </div>

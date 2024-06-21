@@ -1,5 +1,6 @@
-import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, ElementRef, Inject, NgZone } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { EventsComponent } from './events/events.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,6 +27,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     EventsComponent,
     GalleryComponent,
     OverlayDirective,
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styles: `:host {
@@ -33,34 +35,22 @@ import { TopBarComponent } from './top-bar/top-bar.component';
   }`,
 })
 export class AppComponent {
-  private doc: Document;
-
-  constructor(private host: ElementRef, private zone: NgZone, @Inject(DOCUMENT) doc: any) {
-    this.doc = doc;
+  constructor(private translateService: TranslateService) {
+    this.wireTranslations();
   }
 
-  ngOnInit() {
-    const observer = new ResizeObserver((entries) => {
-      this.zone.run(() => {
-        setTimeout(() => {
-          const { width } = entries[0].contentRect;
-          if (this.doc.body.classList.contains('show-overlay')) {
-            return;
-          }
-
-          const originalValue = 'width=device-width, initial-scale=1';
-          const nonResponsiveValue = 'width=1024, initial-scale=1, maximum-scale=1';
-          const viewportTag = this.doc.head.querySelector('meta[name="viewport"]');
-
-          if (width > 800 || width < 660) {
-            viewportTag?.setAttribute('content', originalValue);
-          } else {
-            viewportTag?.setAttribute('content', nonResponsiveValue);
-          }
-        }, 100);
-      });
-    });
-
-    observer.observe(this.host.nativeElement);
+  wireTranslations() {
+    const defaultLang = 'ru';
+    this.translateService.setDefaultLang(defaultLang);
+    // this.route.queryParamMap
+    //   .pipe(takeUntilDestroyed(this.destroy))
+    //   .subscribe((params) => {
+    //     let lang = params.get('lang');
+    //     if (lang === null) {
+    //       this.translateService.use(defaultLang);
+    //     } else {
+    //       this.translateService.use(lang);
+    //     }
+    //   });
   }
 }

@@ -8,20 +8,17 @@
 <div class="block-section bg-green" id="process">
   <div class="net left"></div>
   <div class="container">
-    <h2>Процесс обучения в нашей школе</h2>
+    <h2>{{ 'PROCESS.HEADER' | translate }}</h2>
     <div class="card">
-      <h3>Откройте радость учёбы с нами</h3>
-      <p class="text-w-50">
-        В нашей школе мы используем игровые элементы, творческий подход и академические знания в обучении, дети активно участвуют. Мы
-        создаем дружескую атмосферу, где каждый ребенок чувствует себя комфортно и уверенно
-      </p>
+      <h3>{{ 'PROCESS.ONE.HEADER' | translate }}</h3>
+      <p class="text-w-50">{{ 'PROCESS.ONE.TEXT' | translate }}</p>
       <app-gallery [length]="10" [folder]="'gallery1'"></app-gallery>
     </div>
     <div class="card bg-yellow mt-md">
-      <h3>Участие в конкурсах и олимпиадах</h3>
-      <p class="text-w-25"> Приходите и присоединяйтесь к нашим занятиям. Участвуйте в международных конкурсах и олимпиадах с нами </p>
+      <h3>{{ 'PROCESS.TWO.HEADER' | translate }}</h3>
+      <p class="text-w-25">{{ 'PROCESS.TWO.TEXT' | translate }}</p>
       <app-gallery [length]="10" [folder]="'gallery2'"></app-gallery>
-      <a href="#events" class="btn btn-black bottom mt-md">Узнать больше <span class="pl-xs">↓</span></a>
+      <a href="#events" class="btn btn-black bottom mt-md">{{ 'PROCESS.TWO.BUTTON' | translate }} <span class="pl-xs">↓</span></a>
     </div>
   </div>
   <div class="triangle left"></div>
@@ -39,36 +36,29 @@
 <!-- FEEDBACK -->
 <div class="block-section" id="feedback">
   <div class="container">
-    <h2>Отзывы</h2>
+    <h2>{{ 'FEEDBACK.HEADER' | translate }}</h2>
     <div class="row">
       <!-- Col 1 -->
       <div>
-        <p class="text-20">Приходите и попробуйте одно или несколько различных занятий 🙂</p>
-        <a href="#signup" class="btn btn-black">Связаться с нами</a>
+        <p class="text-20">{{ 'FEEDBACK.TEXT' | translate }}</p>
+        <a href="#signup" class="btn btn-black">{{ 'FEEDBACK.BUTTON' | translate }}</a>
       </div>
 
       <!-- Col 2 -->
-      <div>
+      <div class="mt-md">
         <div class="card bg-yellow mt-sm">
-          <p>
-            "Оба моих ребенка посещают эту школу и всегда возвращаются домой с хорошим настроением. Мне нравится система скидок для семей,
-            это делает обучение доступным для нас. Мы рады, что нашли такую замечательную школу!"
-          </p>
+          <q>{{ 'FEEDBACK.ONE.TEXT' | translate }}</q>
           <h4 class="pb-0">
-            <span class="name">Я</span>
-            Янина, <br />мама Изабеллы (9 лет) <br />и Эрика (6 лет)
+            <span class="name">{{ 'FEEDBACK.ONE.C' | translate }}</span>
+            <span [innerHTML]="'FEEDBACK.ONE.NAME' | translate"></span>
           </h4>
         </div>
 
         <div class="card bg-green mt-sm">
-          <p>
-            “Мы с мужем, Михаилом, очень довольны, что все наши дети посещают эту школу. Наш третий ребенок учится бесплатно. Наши субботы
-            проходят с пользой, и детям здесь очень нравится”
-          </p>
+          <q>{{ 'FEEDBACK.TWO.TEXT' | translate }}</q>
           <h4 class="pb-0">
-            <span class="name">Ю</span>
-            Надежда, <br />
-            мама Алисы (5 лет), Алены (7 лет) и Алексея (10 лет)
+            <span class="name">{{ 'FEEDBACK.TWO.C' | translate }}</span>
+            <span [innerHTML]="'FEEDBACK.TWO.NAME' | translate"></span>
           </h4>
         </div>
       </div>
@@ -76,21 +66,18 @@
         <!-- Col 3 -->
         <div>
           <div class="card bg-blue">
-            <p>
-              "Отличная школа! Алиса с радостью посещает все уроки. Нам очень нравится, что здесь не только дают знания, но и развивают
-              творческое мышление детей. Спасибо учителям за их труд и заботу!"
-            </p>
+            <q>{{ 'FEEDBACK.THREE.TEXT' | translate }}</q>
             <h4 class="pb-0">
-              <span class="name">Н</span>
-              Наталья, <br />мама Алисы (6 лет)
+              <span class="name">{{ 'FEEDBACK.THREE.C' | translate }}</span>
+              <span [innerHTML]="'FEEDBACK.THREE.NAME' | translate"></span>
             </h4>
           </div>
 
           <div class="card bg-dark-blue mt-sm">
-            <p class="white"> "Мы очень довольны обучением в этой школе. С нетерпением ждем каждого урока и начала учебного года” </p>
+            <q class="white">{{ 'FEEDBACK.FOUR.TEXT' | translate }}</q>
             <h4 class="white pb-0">
-              <span class="name">Д</span>
-              Даша, <br />мама Владимира (6 лет)
+              <span class="name">{{ 'FEEDBACK.FOUR.C' | translate }}</span>
+              <span [innerHTML]="'FEEDBACK.FOUR.NAME' | translate"></span>
             </h4>
           </div>
         </div>
@@ -101,22 +88,18 @@
 
 <div class="block-section bg-blue" id="signup">
   <div class="container">
-    <h2>Свяжитесь с нами</h2>
+    <h2>{{ 'CONTACT_US.HEADER' | translate }}</h2>
 
     <div class="row">
       <div>
-        <!-- <app-sign-up></app-sign-up> -->
         <app-contact-us></app-contact-us>
       </div>
 
       <div class="footer-spacer"></div>
 
       <div>
-        <h3>
-          Билингвизм - это дар, <br />
-          который мы развиваем!
-        </h3>
-        <p>До встречи на занятиях! 📚✨</p>
+        <h3 [innerHTML]="'CONTACT_US.HEADLINE' | translate"></h3>
+        <p>{{ 'CONTACT_US.TEXT' | translate }}</p>
       </div>
     </div>
   </div>
