@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AnchorLinkDirective } from '../anchor-link.directive';
 import { FirebaseService, PriceItem } from '../firebase.service';
@@ -11,9 +11,9 @@ import { FirebaseService, PriceItem } from '../firebase.service';
   templateUrl: './price.component.html',
   styleUrl: './price.component.scss',
 })
-export class PriceComponent {
-  lang = this.translateService.currentLang as 'ru' | 'en' | 'da';
-  price$: Promise<PriceItem[]>;
+export class PriceComponent implements OnInit {
+  lang: 'ru' | 'en' | 'da' = 'ru';
+  price$?: Promise<PriceItem[]>;
 
   styles: { bg: string; p: string }[] = [
     { bg: 'bg-blue', p: '' },
@@ -21,7 +21,10 @@ export class PriceComponent {
     { bg: 'bg-green', p: '' },
   ];
 
-  constructor(private readonly fb: FirebaseService, private readonly translateService: TranslateService) {
+  constructor(private readonly fb: FirebaseService, private readonly translateService: TranslateService) {}
+
+  ngOnInit(): void {
+    this.lang = (this.translateService.currentLang as 'ru' | 'en' | 'da') || 'ru';
     this.price$ = this.fb.getPrices();
   }
 

@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgZone } from '@angular/core';
 import { FirebaseApp, initializeApp } from 'firebase/app';
 import 'firebase/firestore';
-import { Firestore, QueryDocumentSnapshot, collection, getDocs, getFirestore, updateDoc } from 'firebase/firestore';
+import { Firestore, collection, getDocs, getFirestore } from 'firebase/firestore';
 import { defaultPrices, defaultSchedule } from './firebase.default-values';
 
 const firebaseConfig = {
@@ -32,40 +32,44 @@ export class FirebaseService {
   app: FirebaseApp;
   db: Firestore;
 
-  constructor() {
+  constructor(private zone: NgZone) {
     this.app = initializeApp(firebaseConfig);
     this.db = getFirestore(this.app);
   }
 
   async getSchedule(): Promise<ScheduleItem[]> {
-    const querySnapshot = await getDocs<ScheduleItem, any>(collection(this.db, 'schedule') as any).catch(() => {
-      console.error('Cannot connect to DB');
+    return this.zone.runOutsideAngular(async () => {
+      const querySnapshot = await getDocs<ScheduleItem, any>(collection(this.db, 'schedule') as any).catch(() => {
+        console.error('Cannot connect to DB');
 
-      return undefined;
+        return undefined;
+      });
+
+      return querySnapshot?.docs.map((item) => item.data()) || defaultSchedule;
     });
-
-    return querySnapshot?.docs.map((item) => item.data()) || defaultSchedule;
   }
 
   async getPrices(): Promise<PriceItem[]> {
-    const querySnapshot = await getDocs<PriceItem, any>(collection(this.db, 'price') as any).catch(() => {
-      console.error('Cannot connect to DB');
+    return this.zone.runOutsideAngular(async () => {
+      const querySnapshot = await getDocs<PriceItem, any>(collection(this.db, 'price') as any).catch(() => {
+        console.error('Cannot connect to DB');
 
-      return undefined;
-    });
+        return undefined;
+      });
 
-    return querySnapshot?.docs.map((item) => item.data()) || defaultPrices;
-  }
-
-  async setPrices() {
-    const querySnapshot = await getDocs<PriceItem, any>(collection(this.db, 'price') as any).catch(() => {
-      console.error('Cannot connect to DB');
-
-      return undefined;
-    });
-
-    querySnapshot?.docs.forEach((item: QueryDocumentSnapshot, index) => {
-      updateDoc(item.ref, defaultPrices[index]);
+      return querySnapshot?.docs.map((item) => item.data()) || defaultPrices;
     });
   }
+
+  // async setPrices() {
+  //   const querySnapshot = await getDocs<PriceItem, any>(collection(this.db, 'price') as any).catch(() => {
+  //     console.error('Cannot connect to DB');
+
+  //     return undefined;
+  //   });
+
+  //   querySnapshot?.docs.forEach((item: QueryDocumentSnapshot, index) => {
+  //     updateDoc(item.ref, defaultPrices[index]);
+  //   });
+  // }
 }

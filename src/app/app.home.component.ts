@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, DestroyRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AnchorLinkDirective } from './anchor-link.directive';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { EventsComponent } from './events/events.component';
 import { FooterComponent } from './footer/footer.component';
@@ -29,6 +30,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     GalleryComponent,
     OverlayDirective,
     TranslateModule,
+    AnchorLinkDirective,
   ],
   templateUrl: './app.home.component.html',
   styles: `:host {

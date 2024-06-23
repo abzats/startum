@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { AnchorLinkDirective } from '../anchor-link.directive';
 import { FirebaseService, ScheduleItem } from '../firebase.service';
@@ -11,8 +11,8 @@ import { FirebaseService, ScheduleItem } from '../firebase.service';
   templateUrl: './schedule.component.html',
   styleUrl: './schedule.component.scss',
 })
-export class ScheduleComponent {
-  schedule$: Promise<ScheduleItem[]>;
+export class ScheduleComponent implements OnInit {
+  schedule$?: Promise<ScheduleItem[]>;
 
   styles: { bg: string; p: string }[] = [
     { bg: 'bg-dark-blue', p: 'white' },
@@ -22,7 +22,9 @@ export class ScheduleComponent {
     { bg: 'bg-yellow', p: '' },
   ];
 
-  constructor(private readonly fb: FirebaseService) {
+  constructor(private readonly fb: FirebaseService) {}
+
+  ngOnInit(): void {
     this.schedule$ = this.fb.getSchedule();
   }
 

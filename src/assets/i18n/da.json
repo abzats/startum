@@ -1,3 +1,124 @@
 {
-  "message": "Translated EN"
+  "TOP_BAR": {
+    "PROCESS": "Klasser",
+    "EVENTS": "Begivenheder",
+    "PRICE": "Pris",
+    "TEAM": "Vores team",
+    "CONTACT_US": "Kontakt os"
+  },
+  "TEAM": {
+    "HEADER": "Vores professional team",
+    "ONE": {
+      "NAME": "Victoria Bech",
+      "TEXT": "Jeg er en uddannet skolelærer i indskoling, hjemmekunstskabslærer, og filolog i Russisk sprog og litteratur. <br />Min erfaring summer 16 år arbejde i skolen i Rusland, hvor jeg arbejdede både i indskoling og i udskolings klasser og siden 2011 (efter jeg har flyttet til Denmark) arbejder jeg med tosproget børn i 12 år som lærer i Russisk center for videnskab og kultur i København siden 2023 åbnede jeg en klub-skole for tosproget børn STARTUM. I STARTUM er jeg både russisk lærer og administrator. <br />I vores skole hjælper vi tosproget børn med at lærer sprog og kultur, samt arbejde med deres kommunikative evner igennem mange sociale arrangementer. <br />Siden 2020 arbejder jeg som en tutor i russisk sprog og litteratur i Birkerød Gymnasiet med Exam forberedelse i IB1 og IB2 i den russiske litteratur.",
+      "CITE": "Det er muligt at lærer russisk sprog på et modersmålsniveau! Det kan jeg bekræfte som lærer og mor til to børn 👩‍👧‍👦"
+    },
+    "TWO": {
+      "NAME": "Victoria Burtseva",
+      "TEXT": "Hej! Jeg er en kunstner, illustrator og grafisk designer. Færdiggjort min uddannelse i Stroganov Akademi i Moskva. Arbejdede i tegningsstudio ”SojusMultfilm”. Flere end 5 år arbejder som grafisk designer, fører Workshops, underviser i tegning og design. <br />Fra 2024 arbejder jeg som tegningslærer i STARTUM. Jeg lærer børn forskellige teknik og stilarter, samt udvikler deres kreativitet. Maling og tegning udvikler fin motorik, hjælper med at håndtere følelser, støtter kreativ tænkning hos børn. Jeg er mor til to sønner, som er også glæde til at tegner.",
+      "CITE": "Kom og være med til ”Grafisk design” og ”Tegning”, hvor vi lære en hel masse om Logoer, stiller, farver! ❤️"
+    },
+    "THREE": {
+      "NAME": "Iuliia Andrushko",
+      "TEXT": "Hej med jer! Jeg er russisk lærer, har en kandidatgrad i russisk filologi. I 12 år arbejdede i Rusland (Cheljabinsk) som gymnasielærer. Undervejs færdiggør kursus for ”Børneteater” og 8 år var leder til teater studie for børn fra 6 til 12 år. <br />I 2024 færdiggøre en online kursus for ”Læsning igennem leg”, den viden og de værktøjer bruger jeg aktiv i mine timer. <br />Siden 2023 flytede jeg til Denmark, og samme år startede jeg at arbejder i STARTUM. Jeg har en søn. I min fritid går jeg til danc og tegning.",
+      "CITE": "Jeg kombinerer de traditionelle og kreative metoder, så børne har det sjovt og lære en hel masse i mine timer 🎭"
+    }
+  },
+  "CONTACT_US": {
+    "EMAIL": "E-mail os",
+    "PHONE": "Ring til os",
+    "ADDRESS": "Vores adresse",
+    "HEADER": "Kontakt os",
+    "HEADLINE": "Tosprogethed er en gave <br />som vi er i gang med at udvikle!",
+    "TEXT": "Vi ses i timen!📚✨"
+  },
+  "FOOTER": {
+    "TEXT": "Følg med i vores nyheder og arrangementer:"
+  },
+  "HERO": {
+    "HEADER": "Klub-skole STARTUM  <br />Lære/støtte russisk sprog hos dit barn",
+    "TEXT": "Tilmeld dig til den første prøve dag gratis!",
+    "SIGN_UP": "Tilmeld her",
+    "SCHEDULE": "Vores skema",
+    "ONE": {
+      "HEADER": "Års Erfaring",
+      "TEXT": "Vi lærer tosprogede børn i Denmark i flere end 10 år og har en solid erfaring med læring i det multisproglige miljø",
+      "BUTTON": "Læs mere"
+    },
+    "TWO": {
+      "HEADER": "Temadage og sociale arrangementer",
+      "TEXT": "De er en største del af vores lærings proces 🎉🎄",
+      "BUTTON": "Læs mere"
+    }
+  },
+  "PRICE": {
+    "HEADER": "Pris og tilbud",
+    "TEXT_ONE": "Familier med tre børn",
+    "TEXT_TWO": "på skolen får et barn gratis (den, som har mindre timer)",
+    "BUTTON": "Læs mere"
+  },
+  "SCHEDULE": {
+    "HEADER": "Skema STARTUM",
+    "CLASS": "Time"
+  },
+  "PROCESS": {
+    "HEADER": "Læring i vores skole",
+    "ONE": {
+      "HEADER": "Giv dit barn glæde til at lære sammen med os",
+      "TEXT": "I vores skole har vi fokus å kreativitet, trivsel og akademiske videnskab. Børne deltager aktivt i timerne. Vi hjælper dem at danne venskab, så alle ”følger sig hjemme"
+    },
+    "TWO": {
+      "HEADER": "Deltagelse i turneringer og konkurrencer",
+      "TEXT": "Vi er aktive deltager i de forskelligere internationale konkurrencer under sprog og kreativitet",
+      "BUTTON": "Læs mere"
+    }
+  },
+  "FEEDBACK": {
+    "HEADER": "Anmeldelser",
+    "TEXT": "Kom og prøv en eller flere forskellige klasser 🙂",
+    "BUTTON": "Kontakt os",
+    "ONE": {
+      "TEXT": "Begge mine børn går på denne skole og kommer altid hjem i godt humør. Jeg kan godt lide rabatsystemet for familier, det gør uddannelse tilgængelig for os. Vi er glade for at have fundet sådan en vidunderlig skole!",
+      "NAME": "Yanina, <br />mor til Isabella, 9 år <br />og Erik, 6 år",
+      "C": "Y"
+    },
+    "TWO": {
+      "TEXT": "Min mand, Mikhail, og jeg er meget glade for, at alle vores børn går på denne skole. Vores tredje barn går her gratis. Vores lørdage er produktive, og børnene nyder virkelig at være her",
+      "NAME": "Nadezhda, <br />mor til Alisa, 5 år,<br /> Alena, 7 år, <br />og Alexei, 10 år",
+      "C": "N"
+    },
+    "THREE": {
+      "TEXT": "Fremragende skole! Alice deltager med glæde i alle timerne. Vi kan virkelig godt lide, at der ikke kun gives viden her, men at børnenes kreative tænkning også udvikles. Tak til lærerne for deres hårde arbejde og omsorg!",
+      "NAME": "Natalya, <br />Alisas mor, 6 år",
+      "C": "N"
+    },
+    "FOUR": {
+      "TEXT": "Vi er meget tilfredse med undervisningen på denne skole. Vi venter spændt på hver time og på begyndelsen af skoleåret.",
+      "NAME": "Dasha, <br />Vladimirs mor, 6 år",
+      "C": "D"
+    }
+  },
+  "EVENTS": {
+    "HEADER": "Vores traditionelle begivenheder",
+    "ONE": {
+      "HEADER": "Vores traditioner Temadage og fester:",
+      "TEXT1": "Åbning/afslutning af skole sæsonen",
+      "TEXT2": "Nytårs fest",
+      "TEXT3": "Russisk fastelavn (Maslenitsa)",
+      "TEXT4": "Workshops for forældre",
+      "TEXT5": "Tværfaglige projekter"
+    },
+    "TWO": {
+      "HEADER": "Pickniks/tur",
+      "TEXT": "Da vores skole går på tur/picnic giver det rige muligheder at danne venskab blend både børn og deres forældre. Der er altid masse af leg, sjov, læring og kreativiteter for en hver nysgerrige sjæl"
+    },
+    "THREE": {
+      "HEADER": "Skak turnering",
+      "TEXT": "I disse konkurrencer har vores børn mulighed at viser hvor er de gode til skak strategi, logisk tankegang og udvikler sig i kamp mod de bedste rivaler. Giv dit barn glæden ved intellektualle sejre!"
+    },
+    "FOUR": {
+      "HEADER": "Aktive frikvarter",
+      "TEXT": "Skolens omgivelser befordrer til en aktiv pause. Børnene elsker at lege udenfor både i frikvarterer og efter timerne. De kan spille fodbold, klatre og rutsje på legeplads"
+    }
+  }
 }
