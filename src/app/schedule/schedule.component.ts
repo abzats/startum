@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { AnchorLinkDirective } from '../anchor-link.directive';
 import { FirebaseService, ScheduleItem } from '../firebase.service';
 
 @Component({
   selector: 'app-schedule',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, AnchorLinkDirective],
   templateUrl: './schedule.component.html',
   styleUrl: './schedule.component.scss',
 })

@@ -1,27 +1,24 @@
 <div class="block-section bg-citron">
   <div class="container">
-    <h2>{{ 'PRICE.HEADER' | translate }}</h2>
+    <h2>{{ 'PRICE.HEADER' | translate }} - {{ lang }}</h2>
     <div class="row">
-      <div class="card bg-blue">
-        <h3><span class="white cursive big">80</span> крон</h3>
-        <h3>за 1 урок</h3>
-      </div>
-
-      <div class="card bg-dark-blue card2">
-        <h3 class="white"><span class="cursive big">140</span> крон</h3>
-        <h3 class="white">за 2 урока</h3>
-      </div>
-
-      <div class="card bg-green card3">
-        <h3><span class="white cursive big">180</span> крон</h3>
-        <h3>за 3 урока</h3>
-      </div>
-
-      <div class="card no-gap card4">
-        <div class="class-four" style="background-image: url('assets/star-white.svg')">
-          <h3>4 урок<br />бесплатно</h3>
+      <ng-container *ngIf="price$ | async as prices">
+        @for (item of prices; track $index;) { @if ($index < 3) {
+        <div class="card bg-blue card{{ $index + 1 }}" [ngClass]="styles[$index].bg">
+          <h3
+            ><span class="white cursive big">{{ item.main }}</span>
+            <span [class.white]="styles[$index].p">{{ item[lang].extension }}</span></h3
+          >
+          <h3 [class.white]="styles[$index].p">{{ item[lang].description }}</h3>
         </div>
-      </div>
+        } @else {
+        <div class="card no-gap card4">
+          <div class="class-four" style="background-image: url('assets/star-white.svg')">
+            <h3>{{ item.main }} <span [innerText]="replaceDoubleCharacters(item[lang].description || '')"></span></h3>
+          </div>
+        </div>
+        } }
+      </ng-container>
     </div>
     <div class="float">
       <p class="pb-0"

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, Input } from '@angular/core';
+import { AnchorLinkDirective } from '../anchor-link.directive';
 import { OverlayDirective } from '../overlay.directive';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
-  imports: [CommonModule, OverlayDirective],
+  imports: [CommonModule, OverlayDirective, AnchorLinkDirective],
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss',
 })

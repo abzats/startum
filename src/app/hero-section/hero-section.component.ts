@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { AnchorLinkDirective } from '../anchor-link.directive';
 import { ScheduleComponent } from '../schedule/schedule.component';
 
 @Component({
   selector: 'app-hero-section',
   standalone: true,
-  imports: [CommonModule, ScheduleComponent, TranslateModule],
+  imports: [CommonModule, ScheduleComponent, TranslateModule, AnchorLinkDirective],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss',
 })

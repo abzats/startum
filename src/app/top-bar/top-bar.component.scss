@@ -88,7 +88,7 @@ ul {
     }
 
     &.active {
-      color: var(--clr-red);
+      border-color: var(--clr-dark-blue);
     }
   }
 }

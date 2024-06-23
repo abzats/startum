@@ -10,32 +10,18 @@
     ><a href="#process">{{ 'TOP_BAR.PROCESS' | translate }}</a></li
   >
   <li class="br-hide"
-    ><a href="#events">{{ 'TOP_BAR.EVENTS' | translate }}</a></li
+    ><a href="/#events">{{ 'TOP_BAR.EVENTS' | translate }}</a></li
   >
   <li class="br-hide"
-    ><a href="#price">{{ 'TOP_BAR.PRICE' | translate }}</a></li
+    ><a href="/en/#price">{{ 'TOP_BAR.PRICE' | translate }}</a></li
   >
   <li class="br-hide"
     ><a href="#team">{{ 'TOP_BAR.TEAM' | translate }}</a></li
   >
   <li class="br-hide lang-li">
     <div class="lang">
-      <a
-        class="lang-link"
-        [routerLink]="[]"
-        [queryParams]="{ lang: null }"
-        [routerLinkActiveOptions]="{ exact: true }"
-        [routerLinkActive]="'active'"
-        >Rus</a
-      >
-      <a
-        class="lang-link"
-        [routerLink]="[]"
-        [queryParams]="{ lang: 'en' }"
-        [routerLinkActiveOptions]="{ exact: true }"
-        [routerLinkActive]="'active'"
-        >Eng</a
-      >
+      <a class="lang-link" [routerLink]="'/'" [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="'active'">Rus</a>
+      <a class="lang-link" [routerLink]="'/en'" [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="'active'">Eng</a>
       <!-- <a
         class="lang-link"
         [routerLink]="[]"
