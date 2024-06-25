@@ -10,7 +10,7 @@
           <span>{{ item.time }}</span>
         </h3>
       </div>
-      <p class="classes" [ngClass]="styles[$index].p" [innerText]="replaceDoubleCharacters(item.ru)"></p>
+      <p class="classes" [ngClass]="styles[$index].p" [innerText]="replaceDoubleCharacters(item[lang])"></p>
     </div>
     }
   </div>

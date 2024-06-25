@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist/ang14/browser",
+    "site": "startum-d550d",
     "ignore": [
       "firebase.json",
       "**/.*",

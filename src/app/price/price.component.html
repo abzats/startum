@@ -1,6 +1,6 @@
 <div class="block-section bg-citron">
   <div class="container">
-    <h2>{{ 'PRICE.HEADER' | translate }} - {{ lang }}</h2>
+    <h2>{{ 'PRICE.HEADER' | translate }}</h2>
     <div class="row">
       <ng-container *ngIf="price$ | async as prices">
         @for (item of prices; track $index;) { @if ($index < 3) {

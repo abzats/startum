@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AnchorLinkDirective } from '../anchor-link.directive';
 import { FirebaseService, ScheduleItem } from '../firebase.service';
 
@@ -12,6 +12,8 @@ import { FirebaseService, ScheduleItem } from '../firebase.service';
   styleUrl: './schedule.component.scss',
 })
 export class ScheduleComponent implements OnInit {
+  lang: 'ru' | 'en' | 'da' = 'ru';
+
   schedule$?: Promise<ScheduleItem[]>;
 
   styles: { bg: string; p: string }[] = [
@@ -22,9 +24,10 @@ export class ScheduleComponent implements OnInit {
     { bg: 'bg-yellow', p: '' },
   ];
 
-  constructor(private readonly fb: FirebaseService) {}
+  constructor(private readonly fb: FirebaseService, private readonly translateService: TranslateService) {}
 
   ngOnInit(): void {
+    this.lang = (this.translateService.currentLang as 'ru' | 'en' | 'da') || 'ru';
     this.schedule$ = this.fb.getSchedule();
   }
 
